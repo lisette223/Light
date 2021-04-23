@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +42,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197.10144927536234" y="80.357142857142847"/>
+            <point key="canvasLocation" x="-364" y="70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7mE-hH-N2x">
+            <objects>
+                <viewController id="wWW-Ab-Q1Z" customClass="ViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYb-LH-5fp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHV-yi-7ZI">
+                                <rect key="frame" x="132" y="383" width="121" height="40"/>
+                                <color key="backgroundColor" red="0.64464890009999998" green="0.63689435620000001" blue="0.77234692260000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Off">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="wWW-Ab-Q1Z" eventType="touchUpInside" id="eAV-Ws-gh2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bD2-Qp-aE9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GHV-yi-7ZI" firstAttribute="leading" secondItem="bD2-Qp-aE9" secondAttribute="leading" constant="132" id="ada-aY-fqx"/>
+                            <constraint firstItem="GHV-yi-7ZI" firstAttribute="top" secondItem="bD2-Qp-aE9" secondAttribute="top" constant="339" id="hG1-oB-LHi"/>
+                            <constraint firstItem="bD2-Qp-aE9" firstAttribute="trailing" secondItem="GHV-yi-7ZI" secondAttribute="trailing" constant="161" id="hZX-Bf-498"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toggle" destination="GHV-yi-7ZI" id="PtC-y6-Sd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPv-4h-11U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="76"/>
         </scene>
     </scenes>
     <resources>
