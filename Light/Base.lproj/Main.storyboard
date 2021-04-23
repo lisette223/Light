@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,13 +27,23 @@
                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rP-88-1uC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1e-eE-eWs">
+                                <rect key="frame" x="182" y="186" width="50" height="30"/>
+                                <state key="normal" title="Testing">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Oq6-ez-ccZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="1rR-x2-kww"/>
+                            <constraint firstItem="p1e-eE-eWs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="CQw-Ke-MXQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oq6-ez-ccZ" secondAttribute="trailing" constant="161" id="DnB-PL-YJ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1e-eE-eWs" secondAttribute="trailing" constant="182" id="PRs-2G-o7p"/>
+                            <constraint firstItem="Oq6-ez-ccZ" firstAttribute="top" secondItem="p1e-eE-eWs" secondAttribute="bottom" constant="167" id="SnL-hL-n3R"/>
                             <constraint firstItem="Oq6-ez-ccZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="339" id="hNv-yu-Xdg"/>
+                            <constraint firstItem="p1e-eE-eWs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="uzU-9F-BoV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -46,6 +56,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
