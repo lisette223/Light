@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,6 +43,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="80.357142857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yMc-Fd-OPi">
+            <objects>
+                <viewController id="GfA-Y5-b7K" customClass="ViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dTc-It-3jD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0h-p7-tc8">
+                                <rect key="frame" x="132" y="383" width="121" height="40"/>
+                                <color key="backgroundColor" red="0.64464890009999998" green="0.63689435620000001" blue="0.77234692260000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Off">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="GfA-Y5-b7K" eventType="touchUpInside" id="sVi-wK-sCK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="66U-bC-DNL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="66U-bC-DNL" firstAttribute="trailing" secondItem="Y0h-p7-tc8" secondAttribute="trailing" constant="161" id="J6n-Tr-sak"/>
+                            <constraint firstItem="Y0h-p7-tc8" firstAttribute="top" secondItem="66U-bC-DNL" secondAttribute="top" constant="339" id="tUh-8e-JVb"/>
+                            <constraint firstItem="Y0h-p7-tc8" firstAttribute="leading" secondItem="66U-bC-DNL" secondAttribute="leading" constant="132" id="vEQ-Sg-5Rr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toggle" destination="Y0h-p7-tc8" id="HOr-8d-CDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qz-kq-Az3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="80"/>
         </scene>
     </scenes>
     <resources>
